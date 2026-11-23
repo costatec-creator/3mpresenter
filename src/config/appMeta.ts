@@ -5,6 +5,9 @@ export const CATALOG_VERSION = 1;
 export const DEFAULT_UPDATE_MANIFEST_URL =
   'https://api.github.com/repos/costatec-creator/3mpresenter/releases/latest';
 
+export const DEFAULT_FEEDBACK_EMAIL = 'costatec@outlook.pt';
+export const DEFAULT_FEEDBACK_WHATSAPP = '+244923353376';
+
 export interface UpdateCheckResult {
   status: 'up-to-date' | 'update-available' | 'unconfigured' | 'offline';
   currentVersion: string;

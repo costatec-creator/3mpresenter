@@ -13,7 +13,7 @@ Sistema institucional simples, rápido e 100% offline para gestão de cultos, pr
 - **3 Fundos Independentes**: Cor sólida ou imagem personalizada separada para *Boas-Vindas*, *Actividade do Programa* e *Hinos / Anúncios*.
 - **Segurança & Administração**:
   - Catálogos oficiais (`Hinário` e `Coletânea`) protegidos contra edição ou eliminação acidental por operadores.
-  - Desbloqueio administrativo por PIN nas **Definições** (PIN inicial padrão: `2026` — altere antes da distribuição oficial).
+  - Desbloqueio administrativo protegido por PIN nas **Definições**.
 - **Cópias de Segurança Offline**: Exportação e restauro completo da base de dados local em formato JSON.
 - **Guia Completo & Ajuda**: Manual completo automático na primeira abertura e modal de *Ajuda e Sugestões* (WhatsApp, E-mail ou cópia de mensagem offline).
 
@@ -55,9 +55,7 @@ O instalador será criado na pasta `release/`.
 
 ---
 
-## Antes da Primeira Distribuição (Checklist do Administrador)
+## Suporte & Configurações de Administração
 
-1. Aceda a **Definições** -> **Modo Administrador Principal** (PIN inicial `2026`).
-2. **Altere o PIN padrão** para um código privado da sua equipa.
-3. Configure o **E-mail** e **WhatsApp de Sugestões / Suporte** em **Definições**.
-4. (Opcional) Defina o URL de verificação de actualizações (`https://api.github.com/repos/SEU_USUARIO/SEU_REPOSITORIO/releases/latest`).
+1. Aceda a **Definições** -> **Administração do Acervo (Admin Principal)** com o PIN do administrador.
+2. Caso necessário, actualize os contactos de **Ajuda e Sugestões** (E-mail e WhatsApp) ou o endereço de verificação de actualizações nas **Definições**.

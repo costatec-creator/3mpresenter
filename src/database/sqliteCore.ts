@@ -16,7 +16,7 @@ import type {
   ProgramWithActivities,
 } from '../types/index.ts';
 
-const DEFAULT_ADMIN_PIN = '2026';
+const DEFAULT_ADMIN_PIN = '2997';
 
 const DEFAULT_SETTINGS: AppSettings = {
   church_name: 'Igreja Central',
@@ -34,8 +34,8 @@ const DEFAULT_SETTINGS: AppSettings = {
   projection_display_name: '',
   show_idle_text_on_image: false,
   update_manifest_url: 'https://api.github.com/repos/costatec-creator/3mpresenter/releases/latest',
-  feedback_email: '',
-  feedback_whatsapp: '',
+  feedback_email: 'costatec@outlook.pt',
+  feedback_whatsapp: '+244923353376',
   welcome_guide_seen: false,
 };
 
@@ -1036,8 +1036,8 @@ export class LocalSqliteDatabase {
       show_idle_text_on_image: map.show_idle_text_on_image === 'true',
       update_manifest_url:
         (map.update_manifest_url || '').trim() || DEFAULT_SETTINGS.update_manifest_url,
-      feedback_email: map.feedback_email ?? DEFAULT_SETTINGS.feedback_email,
-      feedback_whatsapp: map.feedback_whatsapp ?? DEFAULT_SETTINGS.feedback_whatsapp,
+      feedback_email: (map.feedback_email || '').trim() || DEFAULT_SETTINGS.feedback_email,
+      feedback_whatsapp: (map.feedback_whatsapp || '').trim() || DEFAULT_SETTINGS.feedback_whatsapp,
       welcome_guide_seen: map.welcome_guide_seen === 'true',
     };
   }

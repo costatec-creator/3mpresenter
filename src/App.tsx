@@ -17,6 +17,8 @@ import { ProjectionWindowPage } from './pages/projection/ProjectionWindowPage.ts
 import { SettingsPage } from './pages/settings/SettingsPage.tsx';
 import {
   checkForAppUpdate,
+  DEFAULT_FEEDBACK_EMAIL,
+  DEFAULT_FEEDBACK_WHATSAPP,
   DEFAULT_UPDATE_MANIFEST_URL,
   type UpdateCheckResult,
 } from './config/appMeta.ts';
@@ -38,8 +40,8 @@ const INITIAL_SETTINGS: AppSettings = {
   projection_display_name: '',
   show_idle_text_on_image: false,
   update_manifest_url: DEFAULT_UPDATE_MANIFEST_URL,
-  feedback_email: '',
-  feedback_whatsapp: '',
+  feedback_email: DEFAULT_FEEDBACK_EMAIL,
+  feedback_whatsapp: DEFAULT_FEEDBACK_WHATSAPP,
   welcome_guide_seen: true,
 };
 
