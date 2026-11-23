@@ -1,0 +1,6 @@
+{
+  "name": "3MPresenter",
+  "description": "Sistema institucional de gestão de cultos, programas, anúncios, hinário e controlo de projecção para igrejas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

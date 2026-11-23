@@ -1,0 +1,48 @@
+{
+  "appId": "com.3mpresenter.app",
+  "productName": "3MPresenter",
+  "copyright": "© 3MPresenter. Todos os direitos reservados.",
+  "directories": {
+    "output": "release",
+    "buildResources": "electron/assets"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "electron/assets/**/*",
+    "node_modules/sql.js/**/*"
+  ],
+  "extraResources": [
+    {
+      "from": "node_modules/sql.js/dist/sql-wasm.wasm",
+      "to": "sql-wasm.wasm"
+    },
+    {
+      "from": "electron/assets/icon.ico",
+      "to": "icon.ico"
+    },
+    {
+      "from": "electron/assets/icon.png",
+      "to": "icon.png"
+    }
+  ],
+  "win": {
+    "icon": "electron/assets/icon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "${productName}-Setup-${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "installerIcon": "electron/assets/icon.ico",
+    "uninstallerIcon": "electron/assets/icon.ico",
+    "installerHeaderIcon": "electron/assets/icon.ico"
+  }
+}
